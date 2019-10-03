@@ -123,3 +123,10 @@ body {
   font-style: italic;
   margin: 3px 0 10px;
 }
+
+.follower-title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1em;
+}

@@ -8,21 +8,21 @@ class GithubCard extends Component {
       name,
       login,
       location,
-      url,
+      html_url,
       followers,
       following,
       bio
     } = this.props.data;
 
     return (
-    <div class="card">
-      <img src={avatar_url} />
-      <div class="card-info">
-        <h3 class="name">{name}</h3>
-        <p class="username">{login}</p>
+    <div className="card">
+      <img src={avatar_url} alt="avatar"/>
+      <div className="card-info">
+        <h3 className="name">{name}</h3>
+        <p className="username">{login}</p>
         <p>Location: {location}</p>
         <p>Profile:
-          <a href={url}>{url}</a>
+          <a href={html_url}>{html_url}</a>
         </p>
         <p>Followers: {followers}</p>
         <p>Following: {following}</p>
